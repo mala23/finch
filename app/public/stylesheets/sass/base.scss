@@ -1,0 +1,13 @@
+//--------- Base ---------//
+
+$font-stack:    effra, sans-serif;
+$primary-colour: $colour-driftwoodgrey;
+$secondary-colour: $colour-driftwoodlight;
+$tertiary-colour: $colour-alzarin;
+$quartiary-colour: $colour-driftwoodgrey;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-colour;
+  background: $tertiary-colour;
+}
