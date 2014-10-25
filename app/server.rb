@@ -12,7 +12,14 @@ DataMapper.auto_upgrade!
 class Finch < Sinatra::Base
 
   get '/' do
-    slim :index
+    @peeps = Peep.all
+    haml :index
+  end
+
+  post '/peeps' do
+    content = params["content"]
+    Peep.create(:content => content)
+    redirect.to('/')
   end
 
   # start the server if ruby file executed directly
