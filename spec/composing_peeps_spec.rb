@@ -12,7 +12,7 @@ feature "User composes a new peep" do
 		expect(peep.content).to eq("Hello world!")
 	end
 
-	def compose_peep(content, username)
+	def compose_peep(content)
 		within ('#compose-peep') do
 			fill_in 'content', :with => content
 			click_button 'Peep!'
