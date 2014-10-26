@@ -21,15 +21,8 @@ class Finch < Sinatra::Base
   post '/peeps' do
     content = params["content"]
     Peep.create(:content => content)
-    redirect.to('/')
+    redirect to('/')
   end
-
-  # post '/' do
-  #   content = params["content"]
-  #   Peep.create(:content => content)
-  #   @peeps = Peep.all
-  #   haml :index
-  # end
 
   # start the server if ruby file executed directly
   run! if app_file == $0
