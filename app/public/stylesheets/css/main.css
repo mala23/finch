@@ -163,51 +163,51 @@ main {
 main p {
   margin: 0rem 0 2rem 0;
 }
-/* line 112, ../sass/layout.scss */
+/* line 116, ../sass/layout.scss */
 main input[type=submit] {
   margin: 0 0.5rem 0 0.5rem;
   outline: none;
   color: #3B3B3B;
 }
 
-/* line 120, ../sass/layout.scss */
+/* line 124, ../sass/layout.scss */
 .aside-1 {
   background: gold;
 }
 
-/* line 124, ../sass/layout.scss */
+/* line 128, ../sass/layout.scss */
 .aside-2 {
   background: hotpink;
 }
 
 @media all and (min-width: 600px) {
-  /* line 129, ../sass/layout.scss */
+  /* line 133, ../sass/layout.scss */
   .aside {
     flex: 1 auto;
   }
 }
 @media all and (min-width: 800px) {
-  /* line 133, ../sass/layout.scss */
+  /* line 137, ../sass/layout.scss */
   .main {
     flex: 3 0px;
   }
 
-  /* line 134, ../sass/layout.scss */
+  /* line 138, ../sass/layout.scss */
   .aside-1 {
     order: 1;
   }
 
-  /* line 135, ../sass/layout.scss */
+  /* line 139, ../sass/layout.scss */
   .main {
     order: 2;
   }
 
-  /* line 136, ../sass/layout.scss */
+  /* line 140, ../sass/layout.scss */
   .aside-2 {
     order: 3;
   }
 
-  /* line 137, ../sass/layout.scss */
+  /* line 141, ../sass/layout.scss */
   .footer {
     order: 4;
   }
