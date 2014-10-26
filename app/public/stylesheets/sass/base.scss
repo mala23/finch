@@ -1,6 +1,8 @@
 //--------- Base ---------//
 
-$font-stack:    effra, sans-serif;
+@import "colours.scss";
+
+$font-stack:    "effra", sans-serif;
 $primary-colour: $colour-driftwoodgrey;
 $secondary-colour: $colour-driftwoodlight;
 $tertiary-colour: $colour-alzarin;

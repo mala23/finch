@@ -15,7 +15,7 @@ feature "User composes a new peep" do
 	def compose_peep(content)
 		within ('#compose-peep') do
 			fill_in 'content', :with => content
-			click_button 'Peep!'
+			click_button 'peep'
 		end
 	end
 

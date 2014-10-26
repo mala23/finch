@@ -1,0 +1,14 @@
+%main
+  %section#compose-peep
+    %form{:action => "/peeps", :method => "post"}
+      %input{:name => "content", :type => "text", :placeholder => "Compose a new Peep..."}
+      %input{:type => "submit", :value => "Peep!", :id => "Peep!"}
+
+  -# %section#peeps
+  -#   %h1 Peeps
+  -#   %ul
+  -#   - @peeps.each do |peep|
+  -#     %li
+  -#       %p#name #{peep.name}
+  -#       %p#username #{peep.username}
+  -#       %p#content #{peep.content}

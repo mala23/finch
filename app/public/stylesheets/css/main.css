@@ -1,0 +1,214 @@
+/* line 6, ../sass/meyer-reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 16, ../sass/meyer-reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/meyer-reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/meyer-reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/meyer-reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/meyer-reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 35, ../sass/meyer-reset.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 40, ../sass/meyer-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 11, ../sass/base.scss */
+body {
+  font: 100% "effra", sans-serif;
+  color: #3B3B3B;
+  background: #E74C3C;
+}
+
+/* line 5, ../sass/layout.scss */
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* line 21, ../sass/layout.scss */
+body > * {
+  padding: 0;
+  flex: 1 100%;
+}
+
+/* line 26, ../sass/layout.scss */
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #3B3B3B;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+/* line 42, ../sass/layout.scss */
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+/* line 49, ../sass/layout.scss */
+.navigation a:hover {
+  background: #00b7f5;
+}
+
+@media all and (max-width: 800px) {
+  /* line 54, ../sass/layout.scss */
+  .navigation {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 60, ../sass/layout.scss */
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  /* line 66, ../sass/layout.scss */
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 74, ../sass/layout.scss */
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+/* line 79, ../sass/layout.scss */
+header {
+  padding: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+/* line 85, ../sass/layout.scss */
+header h2 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+/* line 92, ../sass/layout.scss */
+footer {
+  color: #ABABAB;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  background: #3B3B3B;
+  margin: 5em 0 0 0;
+  padding: 5rem 0 15rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 104, ../sass/layout.scss */
+main {
+  margin: 2rem 0 5rem 0;
+  font-size: 1.2rem;
+}
+/* line 108, ../sass/layout.scss */
+main p {
+  margin: 0rem 0 2rem 0;
+}
+/* line 112, ../sass/layout.scss */
+main input[type=submit] {
+  margin: 0 0.5rem 0 0.5rem;
+  outline: none;
+  color: #3B3B3B;
+}
+
+/* line 120, ../sass/layout.scss */
+.aside-1 {
+  background: gold;
+}
+
+/* line 124, ../sass/layout.scss */
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  /* line 129, ../sass/layout.scss */
+  .aside {
+    flex: 1 auto;
+  }
+}
+@media all and (min-width: 800px) {
+  /* line 133, ../sass/layout.scss */
+  .main {
+    flex: 3 0px;
+  }
+
+  /* line 134, ../sass/layout.scss */
+  .aside-1 {
+    order: 1;
+  }
+
+  /* line 135, ../sass/layout.scss */
+  .main {
+    order: 2;
+  }
+
+  /* line 136, ../sass/layout.scss */
+  .aside-2 {
+    order: 3;
+  }
+
+  /* line 137, ../sass/layout.scss */
+  .footer {
+    order: 4;
+  }
+}

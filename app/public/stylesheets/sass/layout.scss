@@ -1,0 +1,141 @@
+//--------- Layout ---------//
+
+@import "base.scss";
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+body > * {
+  padding: 0;
+  flex: 1 100%;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: $primary-colour;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+header {
+  padding: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.3em;
+  
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 2rem;
+  }
+}
+
+footer {
+  color: $secondary-colour;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  background: $quartiary-colour;
+  
+  margin: 5em 0 0 0;
+  padding: 5rem 0 15rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  margin: 2rem 0 5rem 0;
+  font-size: 1.2rem;
+  
+  p {
+    margin: 0rem 0 2rem 0;
+  }
+  
+  input[type=submit] {
+     margin: 0 0.5rem 0 0.5rem;
+     
+     outline: none;
+     color: $primary-colour;
+  }
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body { 
+}

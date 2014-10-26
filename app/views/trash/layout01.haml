@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Finch - another twitter clone built with ruby
+    %link{:href => "stylesheets/css/main.css", :rel => "stylesheet", :media => "all"}
+    %script{:src => "js/jquery.js"}
+    %script{:src => "js/jquery-ui.js"}
+    %script{:type=>"text/javascript"}
+      src="//use.typekit.net/pkz7meb.js"
+      try{Typekit.load();}catch(e){}
+
+
+  %body
+    %nav
+      %ul.navigation
+        %li
+          %a{:href => "#"}
+          Finch
+        %li
+          %a{:href => "#"}
+          @username
+
+    %main
+      = yield
+      
+    %footer
+      %detail
+        %p built by mala23
+
+    %script{:src => "js/interface.js"}

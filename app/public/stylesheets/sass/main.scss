@@ -1,3 +1,4 @@
-@include meyer-reset
-@include base
-@include colours
+@import "meyer-reset.scss";
+@import "colours.scss";
+@import "base.scss";
+@import "layout.scss";
